@@ -26,6 +26,21 @@
       };
     </script>
     <style>
+      @media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem !important;
+  }
+  .hero-subtitle {
+    font-size: 1.5rem !important;
+  }
+  .typing-animation {
+    font-size: 1rem;
+    white-space: normal;
+  }
+  .code-snippet pre {
+    font-size: 0.875rem;
+  }
+}
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
       * {
@@ -379,65 +394,46 @@
       </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-100 dark:bg-gray-800 overflow-fix">
-      <div class="container mx-auto px-4 overflow-fix">
-        <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4 overflow-fix">
-            Tentang Kelas Kami
-          </h2>
-          <div class="w-20 h-1 bg-primary mx-auto"></div>
-        </div>
-
-        <div class="flex flex-col md:flex-row items-center gap-10 overflow-fix">
-          <div class="md:w-1/2" data-aos="fade-right">
-            <div class="relative overflow-fix">
-              <div
-                class="bg-gray-300 border-2 border-dashed rounded-xl w-full h-96 overflow-fix"
-              ></div>
-              <div
-                class="absolute -bottom-5 -right-5 bg-primary text-white p-4 rounded-lg shadow-lg overflow-fix"
-              >
-                <i class="fas fa-users text-3xl"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="md:w-1/2" data-aos="fade-left">
-            <h3 class="text-2xl font-bold mb-4 overflow-fix">
-              XI Rekayasa Perangkat Lunak 1
-            </h3>
-            <p class="mb-4 text-gray-700 dark:text-gray-300 overflow-fix">
-              Kelas XI RPL 1 adalah komunitas belajar yang fokus pada
-              pengembangan perangkat lunak. Kami mempelajari berbagai teknologi
-              modern seperti HTML, CSS, JavaScript, Python, dan
-              framework-framework terkini.
-            </p>
-            <p class="mb-6 text-gray-700 dark:text-gray-300 overflow-fix">
-              Dengan pendekatan praktis dan proyek nyata, kami menyiapkan siswa
-              untuk menjadi developer profesional yang siap menghadapi tantangan
-              industri teknologi.
-            </p>
-
-            <div class="code-snippet overflow-fix">
-              <pre><code>// Contoh kode sederhana
-function welcomeToXI_RPL1() {
-    return "Selamat datang di kelas kami,IX RPL 1!
-            btw ini website by ZannDev";
-}
-
-console.log(welcomeToXI_RPL1());</code></pre>
-            </div>
-
-            <button
-              class="btn-hover bg-primary text-white px-6 py-3 rounded-full font-medium flex items-center hover-effect overflow-fix"
-            >
-              <i class="fas fa-book-open mr-2"></i> Lihat Kurikulum
-            </button>
+   <!-- About Section -->
+<section id="about" class="py-20 bg-gray-100 dark:bg-gray-800">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Tentang Kelas Kami</h2>
+      <div class="w-20 h-1 bg-primary mx-auto"></div>
+    </div>
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <div class="md:w-1/2" data-aos="fade-right">
+        <div class="relative">
+          <div class="bg-gray-300 border-2 border-dashed rounded-xl w-full h-96"></div>
+          <div class="absolute -bottom-5 -right-5 bg-primary text-white p-4 rounded-lg shadow-lg">
+            <i class="fas fa-users text-3xl"></i>
           </div>
         </div>
       </div>
-    </section>
+      <div class="md:w-1/2" data-aos="fade-left">
+        <h3 class="text-2xl font-bold mb-4">XI Rekayasa Perangkat Lunak 1</h3>
+        <p class="mb-4 text-gray-700 dark:text-gray-300 whitespace-pre-wrap break-words">
+          Kelas XI RPL 1 adalah komunitas belajar yang fokus pada pengembangan perangkat lunak. 
+          Kami mempelajari berbagai teknologi modern seperti HTML, CSS, JavaScript, Python, dan framework-framework terkini.
+        </p>
+        <p class="mb-6 text-gray-700 dark:text-gray-300 whitespace-pre-wrap break-words">
+          Dengan pendekatan praktis dan proyek nyata, kami menyiapkan siswa untuk menjadi developer profesional 
+          yang siap menghadapi tantangan industri teknologi.
+        </p>
+        <div class="code-snippet bg-gray-200 dark:bg-gray-700 p-4 rounded-lg font-mono text-sm overflow-x-auto max-w-full">
+          <pre class="whitespace-pre-wrap break-words"><code>// Contoh kode sederhana
+function welcomeToXI_RPL1() {
+  return "Selamat datang di kelas kami, IX RPL 1! btw ini website by ZannDev";
+}
+console.log(welcomeToXI_RPL1());</code></pre>
+        </div>
+        <button class="btn-hover bg-primary text-white px-6 py-3 rounded-full font-medium flex items-center hover-effect mt-4">
+          <i class="fas fa-book-open mr-2"></i> Lihat Kurikulum
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Facts Section -->
     <section id="facts" class="py-20 overflow-fix">
@@ -1077,3 +1073,4 @@ console.log(welcomeToXI_RPL1());</code></pre>
     </script>
   </body>
 </html>
+
